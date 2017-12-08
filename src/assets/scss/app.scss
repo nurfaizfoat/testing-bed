@@ -4,6 +4,15 @@
 @import 'foundation';
 @import 'motion-ui';
 
+// custom style
+@import "base";
+@import "components";
+@import "object";
+@import "shameful";
+@import "utilities";
+@import "variables";
+@import "font-face";
+
 @include foundation-global-styles;
 // @include foundation-grid;
 // @include foundation-flex-grid;
@@ -51,3 +60,5 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@include font-face('GT-Eesti', 'gt-eesti-display-regular', 'gt-eesti', 'serif');

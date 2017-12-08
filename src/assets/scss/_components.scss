@@ -1,0 +1,42 @@
+// Variables: global variables and site-wide settings eg responsive.css
+// Base: unclassed HTML elements eg a {}
+// Objects: cosmetic-free objects, abstractions, and design patterns eg o-media.css
+// Components: discrete, complete chunks of UI eg carousel.css
+// Utilities: high-specificity, very explicit selectors that trump everything else. Overrides and helper classes eg .u-hiddenvisually {}
+// Shameful: temporarily disorganised CSS lives in shame.css
+
+// ookyo Colors
+$ookyo-blue: #0432FC;
+$ookyo-orange: #FF5C36;
+$ookyo-turqoise: #00DBBE;
+$ookyo-green: #3FFF78;
+$ookyo-red: #FF0883;
+$ookyo-purple: #7330FF;
+$ookyo-light-purple: #E33DFF;
+$ookyo-yellow: #FFE300;
+$ookyo-white: #FFFFFF;
+
+//Ookyo Input/Select Field color
+.select-blue {
+  border: 2px solid $ookyo-blue;
+  color: $ookyo-turqoise;
+  font-size: .9rem;
+  &:focus {
+    outline: none;
+    border: 2px solid $ookyo-blue;
+    background-color: #fefefe;
+    box-shadow: 0 0 5px $ookyo-blue;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  }
+}
+
+//Dotted line to hightlight USP
+.dotted-usp {
+  border: 3px dotted $ookyo-blue;
+  border-radius: 5px;
+  margin: 20px 10px 10px 0px;
+  padding: 5px 10px;
+  display: inline-block;
+  color: $ookyo-purple;
+  font-size: .9rem;
+}

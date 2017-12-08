@@ -1,0 +1,57 @@
+// Variables: global variables and site-wide settings eg responsive.css
+// Base: unclassed HTML elements eg a {}
+// Objects: cosmetic-free objects, abstractions, and design patterns eg o-media.css
+// Components: discrete, complete chunks of UI eg carousel.css
+// Utilities: high-specificity, very explicit selectors that trump everything else. Overrides and helper classes eg .u-hiddenvisually {}
+// Shameful: temporarily disorganised CSS lives in shame.css
+
+
+// ookyo Colors
+$ookyo-blue: #0432FC;
+$ookyo-orange: #FF5C36;
+$ookyo-turqoise: #00DBBE;
+$ookyo-green: #3FFF78;
+$ookyo-red: #FF0883;
+$ookyo-purple: #7330FF;
+$ookyo-light-purple: #E33DFF;
+$ookyo-yellow: #FFE300;
+$ookyo-white: #FFFFFF;
+
+.top-menu {
+  &, a {
+    color: $ookyo-white;
+    &:hover,
+    &:focus {
+      color: $ookyo-purple;
+    }
+  }
+
+  > * + * {
+    margin-left: .5em;
+    + *:before {
+        content: ">";
+        margin-right: .5em;
+   }
+  }
+  img {
+    max-width: 140px;
+    width: 80%;
+  }
+}
+
+.card-panel {
+  height: auto;
+  background-color: #fff;
+  border: 0 solid transparent;
+  border-radius: 4px;
+  margin: 30px 30px 30px 30px;
+  .catalog-l {
+    img {
+      height: 100%;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+  .catalog-r {
+  }
+}
