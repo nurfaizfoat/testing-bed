@@ -15,11 +15,12 @@ $ookyo-purple: #7330FF;
 $ookyo-light-purple: #E33DFF;
 $ookyo-yellow: #FFE300;
 $ookyo-white: #FFFFFF;
+$ookyo-darkgrey: #333333;
 
 //Ookyo Input/Select Field color
 .select-blue {
   border: 2px solid $ookyo-blue;
-  color: $ookyo-turqoise;
+  color: $ookyo-purple;
   font-size: .9rem;
   &:focus {
     outline: none;
@@ -44,11 +45,17 @@ $ookyo-white: #FFFFFF;
 //Price
 .catalog-price {
   h1 {
+    font-size: 3em;
     font-weight: 700;
     color: $ookyo-turqoise;
   }
-  h5 {
+  h3.offer-info {
+    font-size: 1.2em;
     font-weight: 700;
     color: $ookyo-turqoise;
+  }
+  h5.s-through {
+    color: $ookyo-darkgrey;
+    font-weight: 700;
   }
 }

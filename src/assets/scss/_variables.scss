@@ -6,7 +6,7 @@
 // Shameful: temporarily disorganised CSS lives in shame.css
 
 
-// ookyo Colors
+// ookyo colors
 $ookyo-blue: #0432FC;
 $ookyo-orange: #FF5C36;
 $ookyo-turqoise: #00DBBE;
@@ -16,13 +16,17 @@ $ookyo-purple: #7330FF;
 $ookyo-light-purple: #E33DFF;
 $ookyo-yellow: #FFE300;
 $ookyo-white: #FFFFFF;
+$ookyo-darkgrey: #333333;
+$ookyo-lightgrey: #808080;
 
 .top-menu {
   &, a {
     color: $ookyo-white;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
     &:hover,
     &:focus {
-      color: $ookyo-purple;
+      color: rgb(0, 29, 154);
+      transition: background-color 0.25s ease-out, color 0.25s ease-out;
     }
   }
 
@@ -39,19 +43,131 @@ $ookyo-white: #FFFFFF;
   }
 }
 
+//ookyo card panel
 .card-panel {
+  max-width: 1000px;
   height: auto;
   background-color: #fff;
   border: 0 solid transparent;
   border-radius: 4px;
-  margin: 30px 30px 30px 30px;
+  margin: 0px 0px 30px 0px;
   .catalog-l {
     img {
-      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
+      // Only affects medium screens and smaller
+      @include breakpoint(small down) {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 0px;
+      }
     }
   }
   .catalog-r {
+  }
+}
+
+// ookyo breadcrumbs
+.breadcrumbs-menu {
+  &, a {
+    font-weight: 700;
+    color: $ookyo-turqoise;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    &:hover,
+    &:focus {
+      color: rgb(0, 29, 154);
+      transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    }
+    a.inactive {
+      color: rgba( $ookyo-turqoise, .5 );
+      cursor: default;
+    }
+  }
+  .menu a {
+    padding: 0.7rem 0.5rem;
+  }
+
+  > * + * {
+    margin-left: .5em;
+    + *:before {
+        content: ">";
+        margin-right: .5em;
+   }
+  }
+}
+
+//ookyo footer
+.ookyo-footer {
+  &, a {
+    color: $ookyo-white;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    &:hover,
+    &:focus {
+      color: rgb(0, 29, 154);
+      transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    }
+  }
+  a.inactive {
+    color: $ookyo-white;
+    cursor: default;
+  }
+  p {
+    color: $ookyo-white;
+    cursor: default;
+  }
+}
+
+// ookyo typography
+p.subtitle {
+  color : $ookyo-lightgrey;
+}
+
+// ookyo button
+.button-group {
+  &, a {
+    color: $ookyo-white;
+    &:hover,
+    &:focus {
+      color: $ookyo-white;
+    }
+  }
+  p {
+    color: $ookyo-white;
+  }
+}
+
+.primary-button {
+  width: 100%;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #00dab7;
+  color: #FFFFFF;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.28);
+  &:hover {
+    background-color: #00ad90;
+    background-image: -webkit-linear-gradient(top, #00ad90, #00ad90);
+    background-image: -moz-linear-gradient(top, #00ad90, #00ad90);
+    background-image: -ms-linear-gradient(top, #00ad90, #00ad90);
+    background-image: -o-linear-gradient(top, #00ad90, #00ad90);
+    background-image: linear-gradient(to bottom, #00ad90, #00ad90);
+    text-decoration: none;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.28);
   }
 }
