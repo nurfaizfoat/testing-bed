@@ -6,7 +6,7 @@
         <img src="http://dn1udx8rix6nc.cloudfront.net/assets-ookyo/images/ui/header/cropped_ookyo_smaller_original.png"></img>
       </div>
     </div>
-    <div class="cell large-8 medium-8 hide-for-small-only">
+    <div class="cell large-8 show-for-large">
       <div class="columns top-menu">
         <ul class="menu align-right">
           <li><a href="#">Unlimited Apps</a></li>
@@ -16,6 +16,24 @@
           <li><a href="#">Sign Up</a></li>
           <li><a href="#">Log In</a></li>
         </ul>
+      </div>
+    </div>
+    <div class="cell small-8 hide-for-large">
+      <!-- <p class="text-right"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></p> -->
+      <p class="text-right" style="color: white;" data-toggle="mobileMenu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></p>
+
+      <div class="full reveal" id="mobileMenu" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="pt-30 mobile-menu">
+          <a href="#"><h2 class="pb-10">Unlimited Apps</h2></a>
+          <a href="#"><h2 class="pb-10">How it Works</h2></a>
+          <a href="#"><h2 class="pb-10">Plan</h2></a>
+          <a href="#"><h2 class="pb-10">Rewards</h2></a>
+          <a href="#"><h2 class="pb-10">Sign Up</h2></a>
+          <a href="#"><h2 class="pb-10">Log In</h2></a>
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">→</i></span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -38,20 +56,20 @@
           <li><a class="inactive" href="#">➃ Delivery Details</a></li>
         </ul>
         <ul class="menu show-for-medium-only">
-          <li><a href="#">➊ Select All Access Pack </a></li>
+          <li><a href="#">➊</a></li>
           <li><a class="inactive" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
           <li><a href="#">➋</a></li>
           <li><a class="inactive" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-          <li><a href="#">➌</a></li>
+          <li><a href="#">➌ Select Phone Number</a></li>
           <li><a class="inactive" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
           <li><a class="inactive" href="#">➃</a></li>
         </ul>
         <ul class="menu show-for-small hide-for-medium">
-          <li><a href="#">➊ Select All Access Pack </a></li>
+          <li><a href="#">➊</a></li>
           <li><a class="inactive" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
           <li><a href="#">➋</a></li>
           <li><a class="inactive" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-          <li><a href="#">➌</a></li>
+          <li><a href="#">➌ Select Phone Number</a></li>
           <li><a class="inactive" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
           <li><a class="inactive" href="#">➃</a></li>
         </ul>
@@ -75,30 +93,81 @@
                       <h5 class="form-title">Select your number</h5>
                     </div>
                     <div class="medium-12 cell">
-                      <label class="label-blue">Key in your preferred sequence
-                        <div class="input-group">
-                          <!-- <span class="input-group-label">$</span> -->
-                          <input class="input-group-field" type="number">
-                          <div class="input-group-button">
-                            <input type="submit" class="button" value="Search">
-                          </div>
-                        </div>
+                      <!-- <label class="label-blue">Key in your preferred sequence
+                        <input type="number" value="" placeholder="####">
                       </label>
+
+                      <p class="ookyo-help-text" id="passwordHelpText">Max 4 digits only.</p> -->
+
+                      <div class="input-group input-group-rounded">
+                        <input class="input-group-field" type="search">
+                        <div class="input-group-button">
+                          <input type="submit" class="button primary-button" value="Search">
+                        </div>
+                      </div>
+
+                      <!-- <div class="input-group">
+                        <input class="input-group-field" type="number" placeholder="####">
+                        <div class="input-group-button">
+                          <a class="inline-button"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <p class="ookyo-help-text" id="passwordHelpText">Max 4 digits only.</p> -->
+
+
                     </div>
 
                     <div class="medium-12 cell">
                       <div class="grid-x grid-padding-x">
-                        <fieldset class="large-12 cell">
-                          <input type="radio" name="pickNumber" value="keep" id="keepNumberPortIn" required><label class="label-blue-radio" for="keepNumberPortIn">60182167566</label>
-                          <input type="radio" name="pickNumber" value="new" id="newNumberSelectList"><label class="label-blue-radio" for="newNumberSelectList">60182167566</label>
-                          <input type="radio" name="pickNumber" value="new" id="newNumberSelectList"><label class="label-blue-radio" for="newNumberSelectList">60182167566</label>
+                        <fieldset class="large-6 medium-6 small-6 cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
                         </fieldset>
+                        <fieldset class="large-6 medium-6 small-6 cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                      </div>
+                      <div class="grid-x grid-padding-x">
+                        <fieldset class="large-6 medium-6 small-6  cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                        <fieldset class="large-6 medium-6 small-6  cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                      </div>
+                      <div class="grid-x grid-padding-x">
+                        <fieldset class="large-6 medium-6 small-6  cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                        <fieldset class="large-6 medium-6 small-6  cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                      </div>
+                      <div class="grid-x grid-padding-x">
+                        <fieldset class="large-6 medium-6 small-6  cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                        <fieldset class="large-6 medium-6 small-6  cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                      </div>
+                      <div class="grid-x grid-padding-x">
+                        <fieldset class="large-6 medium-6 small-6  cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                        <fieldset class="large-6 medium-6 small-6  cell">
+                          <input type="radio" name="pokemon" value="Red" id="pickNumber" required><label class="label-blue-radio" for="pickNumber">6017 263 7455</label>
+                        </fieldset>
+                      </div>
+                      <div class="grid-x grid-padding-x">
+                        <div class="large-12 cell">
+                          <hr><p class="subtitle">Want to see more numbers? <a class="subtitle" href="#"><u>Refresh</u></a>  <i class="fa fa-refresh" aria-hidden="true"></i></p>
+                        </div>
                       </div>
                     </div>
 
                     <div class="medium-12 cell mt-10">
                       <div class="medium button-group">
-                        <a class="primary-button">JOM SIGN UP</a>
+                        <a class="primary-button">NEXT</a>
                       </div>
                     </div>
                   </div>
@@ -121,11 +190,11 @@
                     <div class="medium-12 cell">
                       <div class="grid-x">
                         <div class="small-6">
-                          <h6 class="prod-title">Access Pack</h6>
+                          <h6 class="prod-title m-0">Access Pack</h6>
                           <p class="prod-snippet">Entertainment Pack - RM30</p>
                         </div>
                         <div class="small-6">
-                          <h4 class="prod-price text-right">RM30.00</h4>
+                          <h4 class="special-highlight text-right">RM30.00</h4>
                         </div>
                       </div>
                     </div>
@@ -161,6 +230,29 @@
                           <div class="dotted-usp-summary">
                             4GB Internet <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="For everything else that isn’t in the All Access Pack. Enjoy sampai habis, or buy more. AND THEN, continue on Free Basic Internet."><i class="fa fa-info-circle " aria-hidden="true"></i></span>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="medium-12 cell mb-20">
+                      <div class="grid-x">
+                        <div class="medium-12 cell mb-20 mt-20">
+                          <h5 class="form-title m-0">Basic Details</h5>
+                        </div>
+                        <div class="medium-12 cell">
+                          <h6 class="prod-title m-0">Nickname</h6>
+                          <p class="prod-snippet">Nurfaiz Foat</p>
+                        </div>
+                        <div class="medium-12 cell">
+                          <h6 class="prod-title m-0">Name as per ID</h6>
+                          <p class="prod-snippet">Ahmad Nurfaiz bin Ahmad Foat</p>
+                        </div>
+                        <div class="medium-12 cell">
+                          <h6 class="prod-title m-0">Email</h6>
+                          <p class="prod-snippet">bailout76@gmail.com</p>
+                        </div>
+                        <div class="medium-12 cell">
+                          <h6 class="prod-title m-0">ID Number</h6>
+                          <p class="prod-snippet">990122-10-7655</p>
                         </div>
                       </div>
                     </div>

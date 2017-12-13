@@ -6,7 +6,7 @@
         <img src="http://dn1udx8rix6nc.cloudfront.net/assets-ookyo/images/ui/header/cropped_ookyo_smaller_original.png"></img>
       </div>
     </div>
-    <div class="cell large-8 medium-8 hide-for-small-only">
+    <div class="cell large-8 show-for-large">
       <div class="columns top-menu">
         <ul class="menu align-right">
           <li><a href="#">Unlimited Apps</a></li>
@@ -16,6 +16,24 @@
           <li><a href="#">Sign Up</a></li>
           <li><a href="#">Log In</a></li>
         </ul>
+      </div>
+    </div>
+    <div class="cell small-8 hide-for-large">
+      <!-- <p class="text-right"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></p> -->
+      <p class="text-right" style="color: white;" data-toggle="mobileMenu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></p>
+
+      <div class="full reveal" id="mobileMenu" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="pt-30 mobile-menu">
+          <a href="#"><h2 class="pb-10">Unlimited Apps</h2></a>
+          <a href="#"><h2 class="pb-10">How it Works</h2></a>
+          <a href="#"><h2 class="pb-10">Plan</h2></a>
+          <a href="#"><h2 class="pb-10">Rewards</h2></a>
+          <a href="#"><h2 class="pb-10">Sign Up</h2></a>
+          <a href="#"><h2 class="pb-10">Log In</h2></a>
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">→</i></span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -110,7 +128,7 @@
                     </div>
                     <div class="medium-12 cell">
                       <label class="label-blue">ID Number
-                        <input type="text" placeholder="">
+                        <input type="number" placeholder="">
                       </label>
                     </div>
                     <div class="medium-12 cell">
@@ -150,7 +168,7 @@
                     <h5 class="form-title m-0">My Order Summary</h5>
                   </div>
                   <div class="small-6 cell show-for-small-only">
-                    <h5 class="text-right m-0" data-toggle="expandedView">View <i class="fa fa-eye" aria-hidden="true"></i></h5>
+                    <h5 class="text-right m-0 toggler" data-toggle="expandedView">Expand +</h5>
                   </div>
                   <div class="grid-container" id="expandedView" data-toggler=".hide" data-animate="fade-in fade-out">
                     <div class="grid-x grid-padding-x pt-20">
@@ -161,7 +179,7 @@
                           <p class="prod-snippet">Entertainment Pack - RM30</p>
                         </div>
                         <div class="small-6">
-                          <h4 class="prod-price text-right">RM30.00</h4>
+                          <h4 class="special-highlight text-right">RM30.00</h4>
                         </div>
                       </div>
                     </div>

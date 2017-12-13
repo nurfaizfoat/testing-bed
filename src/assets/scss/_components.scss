@@ -17,6 +17,8 @@ $ookyo-yellow: #FFE300;
 $ookyo-white: #FFFFFF;
 $ookyo-darkgray: #333333;
 $ookyo-lightgray: #808080;
+$ookyo-2xlightgray: #EBEBEB;
+
 
 //Ookyo Input/Select Field color
 .select-blue{
@@ -84,14 +86,35 @@ $ookyo-lightgray: #808080;
     color: $ookyo-blue;
     font-weight: 700;
   }
+  p.subtitle {
+    color: $ookyo-blue;
+  }
+  a.subtitle {
+    color: $ookyo-blue;
+    &:hover {
+      color: #001d9a;
+      transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    }
+  }
 }
 
 .summary-form {
+  .total-sum-card {
+    width: 100%;
+    height: auto;
+    background-color: $ookyo-2xlightgray;
+    border-radius: 8px;
+    padding: 20px;
+  }
   h5.form-title {
     color: $ookyo-darkgray;
     font-weight: 700;
   }
-  h4.prod-price {
+  h5.toggler {
+    color: $ookyo-lightgray;
+    cursor: pointer;
+  }
+  h4.special-highlight {
     color: $ookyo-turqoise;
     font-weight: 700;
   }
@@ -101,5 +124,21 @@ $ookyo-lightgray: #808080;
   }
   p.prod-snippet {
     color: $ookyo-lightgray;
+  }
+  h6.sub-total {
+    color: $ookyo-darkgray;
+    font-weight: 700;
+  }
+  h5.grand-total {
+    color: $ookyo-darkgray;
+    font-weight: 700;
+  }
+  h6.sub-total-number {
+    color: $ookyo-purple;
+    font-weight: 700;
+  }
+  h5.grand-total-number {
+    color: $ookyo-purple;
+    font-weight: 700;
   }
 }
