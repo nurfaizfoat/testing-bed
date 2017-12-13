@@ -15,10 +15,11 @@ $ookyo-purple: #7330FF;
 $ookyo-light-purple: #E33DFF;
 $ookyo-yellow: #FFE300;
 $ookyo-white: #FFFFFF;
-$ookyo-darkgrey: #333333;
+$ookyo-darkgray: #333333;
+$ookyo-lightgray: #808080;
 
 //Ookyo Input/Select Field color
-.select-blue {
+.select-blue{
   border: 2px solid $ookyo-blue;
   color: $ookyo-purple;
   font-size: .9rem;
@@ -31,6 +32,13 @@ $ookyo-darkgrey: #333333;
   }
 }
 
+.ookyo-help-text {
+    margin-top: -0.5rem;
+    font-size: 0.9125rem;
+    font-style: italic;
+    color: $ookyo-lightgray;
+}
+
 //Dotted line to hightlight USP
 .dotted-usp {
   border: 3px dotted $ookyo-blue;
@@ -39,6 +47,16 @@ $ookyo-darkgrey: #333333;
   padding: 5px 10px;
   display: inline-block;
   color: $ookyo-purple;
+  font-size: .9rem;
+}
+
+.dotted-usp-summary {
+  border: 3px dotted $ookyo-lightgray;
+  border-radius: 5px;
+  margin: 10px 10px 0px 0px;
+  padding: 5px 10px;
+  display: inline-block;
+  color: $ookyo-darkgray;
   font-size: .9rem;
 }
 
@@ -55,7 +73,33 @@ $ookyo-darkgrey: #333333;
     color: $ookyo-turqoise;
   }
   h5.s-through {
-    color: $ookyo-darkgrey;
+    color: $ookyo-darkgray;
     font-weight: 700;
+  }
+}
+
+//Reg & Summary Form
+.reg-form {
+  h5.form-title {
+    color: $ookyo-blue;
+    font-weight: 700;
+  }
+}
+
+.summary-form {
+  h5.form-title {
+    color: $ookyo-darkgray;
+    font-weight: 700;
+  }
+  h4.prod-price {
+    color: $ookyo-turqoise;
+    font-weight: 700;
+  }
+  h6.prod-title {
+    color: $ookyo-darkgray;
+    font-weight: 700;
+  }
+  p.prod-snippet {
+    color: $ookyo-lightgray;
   }
 }

@@ -16,8 +16,8 @@ $ookyo-purple: #7330FF;
 $ookyo-light-purple: #E33DFF;
 $ookyo-yellow: #FFE300;
 $ookyo-white: #FFFFFF;
-$ookyo-darkgrey: #333333;
-$ookyo-lightgrey: #808080;
+$ookyo-darkgray: #333333;
+$ookyo-lightgray: #808080;
 
 .top-menu {
   &, a {
@@ -68,6 +68,13 @@ $ookyo-lightgrey: #808080;
   }
   .catalog-r {
   }
+  .reg-form-l {
+
+  }
+  .summary-r {
+    background-color: #f7f7f7;
+    border-radius: 4px;
+  }
 }
 
 // ookyo breadcrumbs
@@ -93,7 +100,6 @@ $ookyo-lightgrey: #808080;
   > * + * {
     margin-left: .5em;
     + *:before {
-        content: ">";
         margin-right: .5em;
    }
   }
@@ -122,7 +128,7 @@ $ookyo-lightgrey: #808080;
 
 // ookyo typography
 p.subtitle {
-  color : $ookyo-lightgrey;
+  color : $ookyo-lightgray;
 }
 
 // ookyo button
